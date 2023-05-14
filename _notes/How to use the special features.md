@@ -199,3 +199,4 @@ Why use seasons ? Since this theme is a form of 'digital garden', I thought it w
 ### 10. Other implicit features.
 
 Features like backlinks, context menu, related posts, page preview are available by default as they are implemented using CSS and JS. So, you don't have to do anything other than write as you would normally to make use of those features.
+

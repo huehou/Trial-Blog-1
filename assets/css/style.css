@@ -18,6 +18,7 @@ html {
 
 body {
     counter-reset: sidenote-counter; 
+	background-color: #000000;
 }
 
 .container {
@@ -37,9 +38,9 @@ body {
 }
 
 .box {
-    border-left: 1px solid #f7f7f7;
-    border-right: 1px solid #f7f7f7;
-    border-bottom: 1px solid #f7f7f7;
+    /*border-left: 1px solid #f7f7f7;*/
+    /*border-right: 1px solid #f7f7f7;*/
+    /*border-bottom: 1px solid #f7f7f7;*/
     width: 80%;
     position: absolute;
     top: 0px;
@@ -60,37 +61,42 @@ main {
 /* Phrasing Style: H1, H2, H3, H4, H5, H6, P, A, UL, LI */
 
 h1 {
-    font-size: 29px;
+    font-size: 36px;
+	color: #ff5555;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 30px;
+	color: #ffb86c;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 28px;
+	color: #f1fa8c;
 }
 
 h4 {
-    font-size: 19px;
+    font-size: 24px;
+	color: #50fa7b;
 }
 
 h5 {
-    font-size: 16px;
+    font-size: 22px;
+	color: #4fb7ff;
 }
 
 h6 {
-    font-size: 13px;
+    font-size: 20px;
+	color: #bd93f9;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #555555;
     font-family:  Alegreya, Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-weight: 600;
 }  
 
 a, p, ul, li, ol, table, span, blockquote {
-    color: #555555;
+    color: #f8f8f2;
     font-family:  Alegreya, 'IBM Plex Sans', Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 18px;  /* Let's set the font-size to something old-man friendly */
 }
@@ -149,7 +155,7 @@ code {
 
 .regular-sans code {
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #b19cd9;
     border-radius: 5px;
     border: none;
     font-family: Alegreya, 'IBM Plex Sans', Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
@@ -157,7 +163,7 @@ code {
 
 .serif code {
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #b19cd9;
     border-radius: 5px;
     border: none;
     font-family: Alegreya, 'EB Garamond', Georgia, serif !important;
@@ -173,7 +179,7 @@ pre code {
     padding: 15px 15px  15px 15px;
     vertical-align:middle;
     width: 90%;
-    background-color: #f7f7f7;
+    background-color: #b19cd9;
     border: 1px solid #e9e9e9;
     border-radius: 5px;
     color: #555;
@@ -198,7 +204,7 @@ blockquote p {
     font-family: inherit;
     font-size: inherit;
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #b19cd9;
     border-radius: 5px;
 }
 
@@ -260,14 +266,15 @@ hr {
 /* Blogposts: Post-heading, Post-subheading, Post-content, Related Posts*/
 
 .site-heading {
-    border-bottom: 2px solid #f7f7f7;
+    /*border-bottom: 2px solid #f7f7f7;*/
     flex: 0 0 20px;
     align-self: stretch;
     align-content: flex-end;
+	float: right;
 }
 
 .site-heading h4 {
-    color: #555555;
+    color: #f8f8f2;
     font-family:  Alegreya, Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-stretch: ultra-condensed;
     float: right;
@@ -309,15 +316,16 @@ hr {
 
 
 .dashboard {
-    border-bottom: 2px solid #f7f7f7;
+    /*border-bottom: 2px solid #f7f7f7;*/
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .userboard {
-    background-color: #f7f7f7;
-    width: 100%;
+    background-color: #000000;
+    /*width: 100%;*/
+	float: left;
 }
 
 .username {
@@ -339,6 +347,10 @@ hr {
 
 .userdesc p {
     font-size: 15px;
+}
+
+.userparts {
+	float: left;
 }
 
 .link-to-notes {
@@ -369,8 +381,9 @@ hr {
 }
 
 .main-site-subheader {
-    border-bottom: 1px solid #f7f7f7;
+    /*border-bottom: 1px solid #f7f7f7;*/
     padding-left: 15px;
+	float: right;
 }
 
 .home, .categories, .rss, .projects {
@@ -381,8 +394,8 @@ hr {
     vertical-align: middle;
     display: inline-block;
     justify-content: center;
-    border-right: 1px solid #f7f7f7;
-    color: #555555; 
+    /*border-right: 1px solid #f7f7f7;*/
+    color: #f8f8f2; 
 }
 
 .rss, .categories {
@@ -401,13 +414,13 @@ hr {
    font-weight: 600;
    font-size: 0.7rem; 
    font-family:  Alegreya, Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-   color: #555555; 
+   color: #f8f8f2; 
 }
 
 .icon-home, .icon-category, .icon-projects, .icon-rss {
     margin-top: 7px;
     justify-content: center;
-    stroke: #555555;
+    stroke: #f8f8f2;
 }
 
 
@@ -430,10 +443,10 @@ hr {
 /* Notes: Note-heading, Note-subheading, Notes-content, Related Notes */
 
 .section-nav {
-    background-color: #fff;
+    background-color: #000;
     margin: 10px 0;
     padding: 10px 30px;
-    border: 1px solid #e8e8e8;
+    /*border: 1px solid #e8e8e8;*/
     border-radius: 5px;
     width: auto;
 }
@@ -453,7 +466,7 @@ hr {
 }
 
 .notes-page-subheader {
-    border-bottom: 1px solid #f7f7f7;
+    /*border-bottom: 1px solid #f7f7f7;*/
     padding-left: 15px;
 }
 
@@ -533,11 +546,11 @@ hr {
 }
 
 .default-color {
-    color: #555 !important;
+    color: #f8f8f2 !important;
 }
 
 .default-background {
-    background-color: #f7f7f7 !important;
+    background-color: #000000 !important;
 }
 
 .large {
@@ -636,10 +649,10 @@ hr {
     height: 40px;
     border: 0px;
     font-family: Alegreya,  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
-    color: #555;
+    color: #f8f8f2;
     font-size: 18px;
-    border-bottom: 1px solid #f7f7f7;
-    background-color: #f7f7f7;
+    /*border-bottom: 1px solid #f7f7f7;*/
+    background-color: #000;
 }
 
 ::placeholder {
@@ -663,12 +676,12 @@ hr {
 }
   
 .searchbar input[type=text]:hover {
-    background-color: white;
+    background-color: #000;
 }
   
 .searchbar input[type=text]:active,
 .searchbar input[type=text]:focus {
-    background-color: white;
+    background-color: #000;
     outline: none;
 } 
 
@@ -689,9 +702,9 @@ hr {
 }
 
 .back-icon {
-    background-color: white;
+    background-color: #000;
     fill: currentColor;
-    color: #555555;
+    color: #f8f8f2;
     margin-top: 5px;
     padding-left: 5px; 
     fill: currentColor;
@@ -705,7 +718,7 @@ hr {
 }
 
 .back-p {
-    color: #555555;
+    color: #f8f8f2;
     text-decoration: none;
     cursor: pointer;
     font-weight: 600;
@@ -1008,14 +1021,14 @@ label.srs-toggle {
 }
 
 .related {
-    background-color: #f7f7f7;
+    background-color: #000;
     width: 100%;
     min-height: 100px;
     border-radius: 10px;
 }
 
 .related h4 {
-    color: #888888;
+    color: #f8f8f2;
     padding-top: 20px;
     padding-left: 20px
 }
@@ -1041,7 +1054,7 @@ img[src*='#center'] {
 }
 
 .related-group:hover {
-    background-color: #ededed !important;
+    background-color: #96c !important;
 }
 
 .related-group a {
